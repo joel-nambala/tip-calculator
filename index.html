@@ -4,9 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Tip calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="tips">
+        <form class="bill-form">
+          <label for="bill" class="bill-label">Bill</label>
+          <input
+            type="number"
+            name="bill"
+            id="bill"
+            class="input bill-input"
+            placeholder="$"
+          />
+        </form>
+        <div class="tip">
+          <p class="tip-text">Select tip %</p>
+          <div class="tip-percentages">
+            <p class="tip-percentage five" data-percent="5">5%</p>
+            <p class="tip-percentage ten" data-percent="10">10%</p>
+            <p class="tip-percentage fifteen" data-percent="15">15%</p>
+            <p class="tip-percentage twenty-five" data-percent="25">25%</p>
+            <p class="tip-percentage fifty" data-percent="50">50%</p>
+            <input
+              type="number"
+              class="input custom-input"
+              placeholder="custom"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="results">
+        <div class="tip-amount">
+          <p class="tip-amount-text">Tip amount</p>
+          <p class="tip-amount-value">$0.00</p>
+        </div>
+        <div class="total-amount">
+          <p class="total-amount-text">Total</p>
+          <p class="total-amount-value">$0.00</p>
+        </div>
+        <button class="btn btn-reset">Reset</button>
+      </div>
+    </div>
+  </body>
 </html>

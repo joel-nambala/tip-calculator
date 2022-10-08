@@ -9,6 +9,125 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Space Mono', monospace;
   background-color: #cfeeee;
+}
+
+.container {
+  max-width: 50vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 12rem auto 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 11px;
+}
+
+.bill-form {
+  margin-bottom: 2rem;
+}
+
+.bill-label {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.input {
+  border: none;
+  text-align: end;
+  font-family: inherit;
+  background-color: rgba(207, 238, 238, 0.5);
+  border-radius: 6px;
+  font-size: 1.4rem;
+  padding: 0.1rem 0.2rem;
+  font-weight: 700;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  text-align: left;
+}
+
+.tip-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+}
+
+.tip-percentages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.tip-percentage {
+  background-color: #113636;
+  width: 8rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tip-percentage:hover {
+  background-color: #35a8a8;
+}
+
+.custom-input {
+  width: 8rem;
+  height: 3rem;
+  text-transform: uppercase;
+}
+
+.results {
+  background-color: #113636;
+  padding: 2rem;
+  border-radius: 11px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount {
+  margin-bottom: 1rem;
+}
+
+.tip-amount-text,
+.total-amount-text {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.tip-amount-value,
+.total-amount-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #35a8a8;
+}
+
+.btn {
+  margin-top: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #35a8a8;
+  border: none;
+  padding: 0.6rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #47d3d3;
 }
